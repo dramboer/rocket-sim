@@ -31,16 +31,6 @@ rocket_sim/
 
 - **`main.py`**: The entry point of the program. It allows users to input multiple rockets' configurations, runs the simulation for each rocket, and then generates a plot of all trajectories.
 
-## How to Use
-
-### Prerequisites
-
-Make sure you have Python 3 installed, along with the required libraries:
-
-```yaml
-pip install matplotlib
-```
-
 ## Running the Simulation
 
 1. Clone or download the project.
@@ -51,13 +41,21 @@ pip install matplotlib
    cd rocket_simulation
    ```
 
-3. Run the `main.py` file:
+3. Make sure you have Python 3 installed, along with the required libraries and virtual environment setup:
+
+   ```yaml
+   python3 -m venv env
+   source env/bin/activate
+   pip install -r requirements.txt
+   ```
+
+4. Run the `main.py` file:
 
    ```yaml
    python3 main.py
    ```
 
-4. Follow the prompts to input the number of rockets and configure each rocket's parameters:
+5. Follow the prompts to input the number of rockets and configure each rocket's parameters:
 
    - Rocket mass (in kg)
    - Engine thrust (in N)
@@ -65,7 +63,7 @@ pip install matplotlib
    - Total simulation time (in seconds)
    - A label to distinguish each rocket's trajectory
 
-5. After inputting the data for all rockets, the simulation will run, and the results will be saved to `sim.png`.
+6. After inputting the data for all rockets, the simulation will run, and the results will be saved to `sim.png`.
 
 ## Example Usage
 
